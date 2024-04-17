@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+      <p><b>Microscopic cell simulation</b>
+        <br>Create Cell: Left-click
+      </p>
+      <p>Cells merge when intersecting each other considerably and of are the same faction.
+        <br>Cells split when reaching four times their "quark" size.
+        <br>When cells split, their faction increments. There are 6 different factions.
+        <br>Cells age, and will eventually die. Additionally, after too many generations, the lineage will end.
+      </p>
+    </main>
+    <script src="sketch.js"></script>
+    <script src="cell.js"></script>
+  </body>
+</html>
