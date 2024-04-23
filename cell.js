@@ -29,7 +29,7 @@ class Cell {
   // Returns true if this Cell intersects the passed Cell
   isIntersecting(cell) {
     let distance = quickDist(this.position, cell.position);
-    let radialSum = max(this.size, cell.size);
+    let radialSum = sq(max(this.size, cell.size));
     
     // Check if Cells intersect
     if (radialSum > distance) {
